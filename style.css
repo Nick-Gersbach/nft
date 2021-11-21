@@ -1,0 +1,172 @@
+/* Colors
+Dark Blue BG - #0D1A2D
+Inner Card container - #15273F
+Card Heading - #0D1A2D
+Card Description - #59708F
+Card Price - #59D0D6
+Time Left - #97B1D4
+Picture Hover State - #20324A
+info Hover state - #23E4EB
+
+*/
+/*
+
+
+ Global Styles
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  line-height: 1.7;
+}
+
+body {
+  background: #0d1a2d;
+}
+
+/* 
+
+
+Card Styling
+
+
+*/
+
+.outer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.nft-card-container {
+  background: #15273f;
+  width: 400px;
+  height: auto;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.nft-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: ease-in-out 0.5s;
+  padding-bottom: 15px;
+  backface-visibility: hidden;
+}
+
+.nft-img:hover {
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.middle {
+  transition: 0.5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+}
+
+.card-image-container {
+  position: relative;
+}
+
+.card-image-container:hover .image {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.card-image-container:hover .middle {
+  opacity: 1;
+
+  cursor: pointer;
+}
+
+h3 {
+  color: #d9e0ea;
+  transition: ease-in-out 0.5s;
+  display: inline;
+}
+
+h3:hover {
+  color: #23e4eb;
+  cursor: pointer;
+}
+
+p {
+  color: #59708f;
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+.time-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.eth-icon {
+  padding-right: 3px;
+}
+
+.eth-text {
+  color: #59d0d6;
+  font-weight: 700;
+}
+
+.time-left-icon {
+  padding-right: 5px;
+}
+
+.time-text {
+  color: #97b1d4;
+}
+
+.blue-line {
+  border-bottom: 2px solid #20324a;
+  margin: auto;
+  margin-right: 19px;
+  margin: 15px 0px;
+}
+
+.creator-text {
+  color: #d9e0ea;
+  transition: ease-in-out 0.5s;
+}
+
+.creator-text:hover {
+  color: #23e4eb;
+  cursor: pointer;
+}
+
+.creator-content {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 55px;
+  padding-right: 20px;
+}
+
+/* 
+
+Media Queries
+
+
+*/
+
+@media screen and (max-width: 416px) {
+  .outer-container {
+    padding: 25px;
+  }
+}
